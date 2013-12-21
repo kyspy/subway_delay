@@ -1,0 +1,39 @@
+ <p>
+  {% for subway in subways %}
+   {% ifequal subway.line "ACE" %}
+      <p><h1 class="ace">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+   
+   {% ifequal subway.line "BDFM" %}
+      <p><h1 class="bdfm">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+      
+   {% ifequal subway.line "G" %}
+      <p><h1 class="g">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+   
+   {% ifequal subway.line "JZ" %}
+      <p><h1 class="jz">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+      
+   {% ifequal subway.line "L" %}
+      <p><h1 class="l">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+      
+   {% ifequal subway.line "NQR" %}
+      <p><h1 class="nqr">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+   
+   {% ifequal subway.line "123" %}
+      <p><h1 class="onetwothree">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+      
+   {% ifequal subway.line "456" %}
+      <p><h1 class="fourfivesix">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+      
+   {% ifequal subway.line "7" %}
+      <p><h1 class="seven">{{ subway.line|upper }}: {{ subway.status|upper }}</h1></p>
+   {% endifequal %}
+   
+    {% endfor %}</p>
